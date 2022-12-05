@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 503, y: 321}
   m_MaxSize: {x: 16192, y: 12117}
   vertical: 0
-  controlID: 90
+  controlID: 41
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 321}
   m_MaxSize: {x: 8096, y: 12117}
   vertical: 1
-  controlID: 29
+  controlID: 42
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 20
+  controlID: 43
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,22 +318,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Mini First Person Controller
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Mini First Person Controller
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\drago\Documents\GitHub\HoneyWeShrunktheKids\FinalProjectXRDev
+  m_LastProjectPath: C:\Users\rolan\Documents\Unreal Projects\Final Project (XR Dev)\HoneyWeShrunktheKids\FinalProjectXRDev
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 28bc0000
-    m_LastClickedID: 48168
-    m_ExpandedIDs: 00000000eeb700004cb8000050b8000000ca9a3b
+    m_SelectedIDs: 3c6d0000
+    m_LastClickedID: 27964
+    m_ExpandedIDs: 00000000b86b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000b86b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -490,10 +490,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 319}
-      m_SelectedIDs: eec90000
-      m_LastClickedID: 51694
-      m_ExpandedIDs: 7c80ffff7e81ffff4682ffff5884ffff7085ffff7288ffffc488ffffb8b1ffff20bcffff0ac9000036c900003eca0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 2a6e0000
+      m_LastClickedID: 28202
+      m_ExpandedIDs: 54f4ffffc0f7ffffcc6d0000d06e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -743,9 +743,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -17.090366, y: 25.158092, z: 24.145718}
+    m_Target: {x: 12.771671, y: -22.620804, z: -1.5629629}
     speed: 2
-    m_Value: {x: -17.090366, y: 25.158092, z: 24.145718}
+    m_Value: {x: 12.771671, y: -22.620804, z: -1.5629629}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -792,13 +792,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.19040509, y: 0.3306665, z: 0.06831829, w: -0.9218399}
+    m_Target: {x: 0.33860508, y: 0.65524685, z: -0.41889313, w: 0.5296576}
     speed: 2
-    m_Value: {x: 0.18753281, y: 0.3322448, z: 0.06760557, w: -0.92188627}
+    m_Value: {x: 0.33923125, y: 0.65444815, z: -0.41838256, w: 0.5306371}
   m_Size:
-    m_Target: 16.228529
+    m_Target: 20.2237
     speed: 2
-    m_Value: 16.228529
+    m_Value: 19.352823
   m_Ortho:
     m_Target: 0
     speed: 2
