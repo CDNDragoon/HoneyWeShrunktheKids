@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class GameState : MonoBehaviour
 {
@@ -17,6 +18,12 @@ public class GameState : MonoBehaviour
 
     [SerializeField]
     private GameObject playerLocomotionSystem;
+
+    [SerializeField]
+    private Volume globalVolume;
+
+    [SerializeField]
+    private AudioSource deathSound;
 
     private CanvasGroup canvasGroup;
     private bool dead;
@@ -43,6 +50,15 @@ public class GameState : MonoBehaviour
         }
     }
 
+    IEnumerator FadeInVolume()
+    {
+        while (globalVolume.weight < 1)
+        {
+            globalVolume.weight += Time.deltaTime * 0.5f;
+            yield return null;
+        }
+    }
+
     public void KillPlayer()
     {
         if (dead) return;
@@ -62,13 +78,15 @@ public class GameState : MonoBehaviour
         if (playerMovement != null) playerMovement.enabled = false;
         playerLocomotionSystem.SetActive(false);
 
-        // TODO: make this look prettier
-        // TODO: play jingle?
         // TODO: slow down time?
         // Time.timeScale = 0;
+
+        // Play death sound
+        deathSound.Play();
 
         // Show death overlay
         deathScreenCanvas.SetActive(true);
         StartCoroutine(FadeInDeathScreen());
+        StartCoroutine(FadeInVolume());
     }
 }
