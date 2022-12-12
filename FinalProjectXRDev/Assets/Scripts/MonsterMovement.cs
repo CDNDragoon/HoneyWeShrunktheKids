@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,14 +16,14 @@ public class MonsterMovement : MonoBehaviour
     private GameObject gameStateController;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         monster.SetDestination(player.position);
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.tag != "Player") return;
+        if (other.gameObject.tag != "Player") return;
         var gameStateScript = gameStateController.GetComponent<GameState>();
         if (gameStateScript != null)
         {
