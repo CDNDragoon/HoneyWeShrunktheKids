@@ -21,9 +21,10 @@ public class MonsterMovement : MonoBehaviour
         monster.SetDestination(player.position);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag != "Player") return;
+        if (other.tag != "Player") return;
+
         var gameStateScript = gameStateController.GetComponent<GameState>();
         if (gameStateScript != null)
         {
