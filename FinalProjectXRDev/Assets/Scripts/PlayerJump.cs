@@ -9,21 +9,27 @@ public class PlayerJump : MonoBehaviour
     private float jumpStrength;
 
     Rigidbody playerBody;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         playerBody = GetComponent<Rigidbody>();
-        jumpStrength = 5f;
+        Jump();
     }
     public void Jump()
     {
         playerBody.AddForce(transform.up * jumpStrength);
     }
+}
 
     // Update is called once per frame
-    void Update()
-    {
-       
-    }
-}
+    //void Update()
+    //{
+    //    Jump();
+    //}
+
+//    private void FixedUpdate()
+//    {
+//        Jump();
+//    }
+//}
